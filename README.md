@@ -2,7 +2,7 @@
 
 A feature-rich, modern inventory management system built with React, Vite, and TypeScript, supercharged with a suite of powerful AI capabilities from OpenAI.
 
-**[➡️ View Live Demo](https://your-deployment-link.vercel.app/)** _(Replace with your actual deployment link)_
+**[➡️ View Live Demo](https://inventory-management-system-9ntc.vercel.app/)** _(Replace with your actual deployment link)_
 
 ---
 
