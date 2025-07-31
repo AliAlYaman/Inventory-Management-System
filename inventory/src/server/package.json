@@ -1,0 +1,17 @@
+{
+  "name": "inventory-ai-server",
+  "version": "1.0.0",
+  "description": "Secure backend for handling OpenAI API key",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^0.0.13",
+    "ai": "^3.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
