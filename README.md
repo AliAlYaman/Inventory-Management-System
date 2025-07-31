@@ -12,6 +12,7 @@ This is not just another CRUD application. It's a comprehensive platform designe
 
 The system allows teams to manage inventory with granular control, gain intelligent insights through AI analysis, and visualize data in an intuitive way.
 
+Note: You must clone repo and start server.js in server folder in order to see the AI Audit
 ## Core Features
 
 - **Full CRUD Operations:** Create, Read, Update, and Delete inventory items through an intuitive modal-based interface.
@@ -80,21 +81,17 @@ To run this project locally, you will need to run two separate processes: the fr
     git clone <repository-url>
     cd <repository-folder>
     \`\`\`
-
 2.  **Setup the Frontend:**
     \`\`\`bash
     # Install frontend dependencies
     npm install
     \`\`\`
-
 3.  **Setup the Backend Server:**
     \`\`\`bash
     # Navigate to the server directory
     cd server
-
     # Install backend dependencies
     npm install
-
     # Create a .env file in the 'server' directory
     # and add your OpenAI API key
     echo "OPENAI_API_KEY=sk-..." > .env
@@ -103,6 +100,12 @@ To run this project locally, you will need to run two separate processes: the fr
 ### Running the Application
 
 You will need **two separate terminals** open.
+
+> **A Note on the Two-Server Setup**
+>
+> The backend server (`server/server.js`) is **not optional**. It acts as a secure proxy to handle all communication with the OpenAI API. If this server is not running, **all AI-powered features will fail**, including the AI Audit, the chatbot, and the data entry assistants. You will see "Failed to fetch" errors in the application.
+>
+> **You must have both the frontend and backend servers running simultaneously for the application to be fully functional.**
 
 -   **In Terminal 1 (Frontend):**
     \`\`\`bash
